@@ -1,8 +1,9 @@
+import UserGallery from "./components/UserGallery";
 
 function App() {
   return (
     <div className="App">
-      CRUD
+      <UserGallery />
     </div>
   );
 }
