@@ -1,9 +1,10 @@
 import { DELETE_DATA, UPDATE_DATA } from "./userTypes"
 
 const initialData = {
-    totalUser: [],
+    userData: [],
     updatedData: [],
 }
+
 
 
 const userReducer = (state = initialData, action) => {
@@ -11,7 +12,8 @@ const userReducer = (state = initialData, action) => {
 
         case UPDATE_DATA:
             return {
-                state
+                ...state,
+                userData: action.payLoad
             }
 
         case DELETE_DATA:
