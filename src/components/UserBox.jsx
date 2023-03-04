@@ -8,9 +8,12 @@ import {
   AiFillDelete,
 } from "react-icons/ai";
 import EditModal from "./EditModal";
+import { useDispatch } from "react-redux";
+import { deleteUserData } from "../Redux/userActions";
 
 const UserBox = (props) => {
-  const { name, email, website, phone, username } = props.item;
+  const { name, email, website, phone, username, id } = props.item;
+  const dispatch = useDispatch()
   const [modalShow, setModalShow] = useState(false);
   const [isLike, setIsLike] = useState(false);
   return (
@@ -57,7 +60,7 @@ const UserBox = (props) => {
             <button className="edit" onClick={() => setModalShow(true)}>
               <AiFillEdit />
             </button>
-            <button className="delete">
+            <button onClick={() => dispatch(deleteUserData(id))} className="delete">
               <AiFillDelete />
             </button>
           </div>
