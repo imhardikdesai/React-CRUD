@@ -43,7 +43,7 @@ const UserBox = (props) => {
               </div>
               <div className="user-box_details--website">
                 <IoEarthOutline />
-                <p>{website}</p>
+                <p>http://{website}</p>
               </div>
             </div>
           </div>

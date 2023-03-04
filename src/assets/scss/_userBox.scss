@@ -49,11 +49,15 @@
     border-top: 1px solid #e8e8e8;
     .like {
       color: red;
-      font-size: 22px;
+      font-size: 20px;
+    }
+    .edit{
+      border-right: 1px solid #e8e8e8;
+      border-left: 1px solid #e8e8e8;
     }
     button {
       color: rgba(0, 0, 0, 0.45);
-      font-size: 20px;
+      font-size: 19px;
       border: none;
       background-color: transparent;
       margin: 12px 0px;

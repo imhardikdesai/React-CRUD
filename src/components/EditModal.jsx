@@ -3,7 +3,7 @@ import Modal from "react-bootstrap/Modal";
 // import { AiOutlineClose } from "react-icons/ai";
 
 const EditModal = (props) => {
-  const { name, email, website, phone, username } = props.item;
+  const { name, email, website, phone } = props.item;
   return (
     <>
       <Modal
