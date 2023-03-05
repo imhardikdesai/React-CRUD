@@ -4,7 +4,6 @@ const initialData = {
     loading: false,
     error: '',
     userData: [],
-    updatedData: [],
 }
 
 
@@ -13,9 +12,12 @@ const userReducer = (state = initialData, action) => {
     switch (action.type) {
 
         case UPDATE_DATA:
+            const userIndex = state.userData.findIndex(item => item.id === action.payLoad.id)
+            const userData = [...state.userData]
+            userData.splice(userIndex, 1, action.payLoad)
             return {
                 ...state,
-                userData: action.payLoad
+                userData: userData
             }
 
         case DELETE_DATA:

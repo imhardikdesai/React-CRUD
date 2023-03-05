@@ -34,7 +34,7 @@ export const fetchUsersFailure = error => {
 }
 
 export const fetchGame = () => {
-    const URL = 'https://jsonplaceholder.typicode.com/users'
+    const URL = 'https://jsonplaceholder.typicode.com/users';
     return (dispatch) => {
         dispatch(fetchUsersRequest())
         axios.get(URL)

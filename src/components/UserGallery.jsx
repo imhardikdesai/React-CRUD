@@ -24,8 +24,6 @@ const UserGallery = () => {
                 radius="9"
                 color="#000000"
                 ariaLabel="three-dots-loading"
-                wrapperStyle={{}}
-                wrapperClassName=""
                 visible={true}
               />
             </div>
